@@ -5,12 +5,18 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(210, 212, 214);
+    background-color: #48A30012;
+    
+
 }
 #root{
     
     justify-content: center;
     align-items: center;
+}
+.span1{
+    color: #61481C;
+    margin-left: 10px;
 }
 .heading-container {
     display: flex;
@@ -18,6 +24,12 @@ body {
     align-items: center;
     font-weight: 700;
     margin: 1.5rem;
+    color: #48A300;
+}
+@media(max-width: 768px){
+    .heading-container{
+        padding: 16px 24px;
+    }
 }
 .main-container {
     display: flex;
@@ -25,83 +37,113 @@ body {
     align-items: flex-start; /* Align children to the left */
     justify-content: flex-start;
     margin: 0 auto;
-    width: 30%;
+    width: 500px;
     height: auto;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 
 .today-container {
     margin: 1rem 1.5rem;
     font-weight: 600;
+    display: flex;
+}
+.sunimg{
+    height: 40px;
+    width: 40px;
+    margin: 0 15px;
 }
 .bar-container{
     margin: 8px 24px;
     font-size: 12px;
 }
-.raisingInput-container{
+.progessbar-container{
+    height: 20px;
     margin: 0px 24px;
     border-radius: 10px;
-    width: 90%;
+    width: 85%;
     border: none;
     outline: none;
     background-color: rgb(210, 212, 214);
 }
+.progessbar-value{
+    height: 20px;
+    margin: 0px 0;
+    border-radius: 10px;
+    width: 33%;
+    border: none;
+    outline: none;
+    background-color: #48A300;
+}
 .setgoal-div{
     margin: 24px ;
+    color: #FF5151;
+    
 }
-.list1{
-    border-color: black;
+.divforgoal1-container, .divforgoal2-container, .divforgoal3-container {
+    font-size: 16px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+    width: 85%;
+    align-items: center;
     margin: 0 0 24px 24px;
-    width: 90%;
-    padding: 12px;
     font-size: 16px;
     border-radius: 10px;
     border: 2px solid gray;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
-.radio-button1 {
-    margin: 10px;
+.radio1, .radio2, .radio3 {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+
 }
-.list2{
-    border-color: black;
-    margin: 0 0 24px 24px;
-    width: 90%;
-    padding: 12px;
+/* .radio1, .radio2, .radio3 {
+    height: 24px;
+    width: 24px;
+    border: 2px solid rgba(97, 72, 28, 0.3);
+    border-radius: 50%;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} */
+.input1-container, .input2-container, .input3-container {
+    padding: 15px 0;
     font-size: 16px;
-    border-radius: 10px;
-    border: 2px solid gray;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    border: none;
+    outline: none;
+    vertical-align: middle;
+    font-family: inherit;
 }
-.radio-button2 {
-    margin: 10px;
-}
-.list3{
-    border-color: black;
-    margin: 0 0 24px 24px;
-    width: 90%;
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 10px;
-    border: 2px solid gray;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.radio-button3 {
-    margin: 10px;
-}
+/* .tick1, .tick2, .tick3{
+    background-color: #48A300;
+} */
+
+
+
+
+
 .progress-container {
     margin: 10px auto;
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
 
 }
 .last-container {
-    margin: 10px auto;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    margin: 30px auto;
     font-size: 10px;
+    margin-bottom: 40px;
 }
