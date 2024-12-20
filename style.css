@@ -58,10 +58,12 @@ body {
 }
 .bar-container{
     margin: 8px 24px;
-    font-size: 12px;
+    font-size: 14px;
 }
 .progessbar-container{
     height: 20px;
+    font-size: 14px;
+    text-align: center;
     margin: 0px 24px;
     border-radius: 10px;
     width: 440px;
@@ -69,35 +71,18 @@ body {
     outline: none;
     background-color: rgb(210, 212, 214);
 }
-.progessbar-value{
-    height: 20px;
-    font-size: 12px;
-    margin: 0px 0;
-    padding-top: 2px;
-    width: 100%;
-    text-align: center;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-}
-.progessbar-value1{
-    width: 150px;
-    background-color: #48A300;
-}
-.progessbar-value2{
-    width: 290px;
-    background-color: #48A300;
-}
-.progessbar-value3{
-    width: 440px;
-    background-color: #48A300;
-}
+
 .setgoal-div{
     margin: 24px ;
     color: #FF5151;
     
 }
-.divforgoal1-container, .divforgoal2-container, .divforgoal3-container {
+.horizontalLine {
+    border: none;
+    border-top: 2px solid #ff0000;
+    margin: 10px 10px;
+  }
+.divforgoal-container {
     font-size: 16px;
     margin-left: 15px;
     margin-right: 15px;
@@ -111,7 +96,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
 }
-.radio1, .radio2, .radio3 {
+.radio {
     margin-left: 15px;
     margin-right: 15px;
     width: 17px;
@@ -131,7 +116,7 @@ body {
     justify-content: center;
 
 } */
-.input1-container, .input2-container, .input3-container {
+.input-container {
     padding: 15px 0;
     font-size: 16px;
     width: 80%;
@@ -140,8 +125,9 @@ body {
     vertical-align: middle;
     font-family: inherit;
 }
-.crossed1, .crossed2, .crossed3 {
+.crossed {
    text-decoration: line-through;
+   color: red;
 }
 /* .tick1, .tick2, .tick3{
     background-color: #48A300;
